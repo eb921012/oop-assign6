@@ -18,9 +18,15 @@ PrintMyID(std::string studId) {
 int main(){
     // TODO 
     // Integrate the Simple MVC Pattern to run the program.
+	// 建立 MVC 架構：Controller 內部會持有 Model 與 View
+    View view;
+	Controller controller(view);
+	//Controller controller;
 
 
     // TODO
     // change to your student ID.
-    PrintMyID("1137030XX");
+	// 執行遊戲主迴圈
+    controller.run();
+    PrintMyID("112207321");
 }

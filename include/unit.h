@@ -13,4 +13,8 @@ using Position = Vec2;
 
 enum Color {BLACK=0, RED, GREEN, YELLOW, BLUE, PINK, CYAN, WHITE, NOCHANGE};
 
+inline bool operator==(const Vec2& a, const Vec2& b) {
+    return a.e1 == b.e1 && a.e2 == b.e2;
+}
+
 #endif
